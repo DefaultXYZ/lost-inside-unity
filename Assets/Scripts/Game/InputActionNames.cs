@@ -4,6 +4,4 @@
     public const string Look = "Player/Look";
     public const string Jump = "Player/Jump";
     public const string Sprint = "Player/Sprint";
-    public const string TiltLeft = "Player/TiltLeft";
-    public const string TiltRight = "Player/TiltRight";
 }
