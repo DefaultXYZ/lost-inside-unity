@@ -1,0 +1,11 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="root" style="flex-grow: 1;">
+        <engine:VisualElement name="note-background" style="flex-grow: 1; margin-top: 24px; margin-right: 24px; margin-bottom: 24px; margin-left: 24px; padding-top: 16px; padding-right: 16px; padding-bottom: 16px; padding-left: 16px; background-color: rgb(190, 182, 132);">
+            <engine:Label name="note-text" style="flex-grow: 1;">
+                <Bindings>
+                    <engine:DataBinding property="text" data-source-path="text" data-source="project://database/Assets/UI/Story1.asset?fileID=11400000&amp;guid=8f9c12634d6fa6e4f838479b825691fc&amp;type=2#Story1" binding-mode="ToTarget" />
+                </Bindings>
+            </engine:Label>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
