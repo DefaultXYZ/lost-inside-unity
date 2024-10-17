@@ -5,7 +5,7 @@ public class PlayerInteract : MonoBehaviour
 {
     [SerializeField]
     private CameraLook cameraLook;
-    
+
     private InputAction interactAction;
 
     private void Awake()
@@ -25,9 +25,10 @@ public class PlayerInteract : MonoBehaviour
 
     private void InteractActionPerformed(InputAction.CallbackContext obj)
     {
-        if (cameraLook.CurrentObservedObject && cameraLook.CurrentObservedObject.TryGetComponent(out StoryNote note))
+        if (cameraLook.CurrentObservedObject != null &&
+            cameraLook.CurrentObservedObject.TryGetComponent(out IInteractable interactable))
         {
-            note.OnInteracted();
+            interactable.OnInteract();
         }
     }
 }

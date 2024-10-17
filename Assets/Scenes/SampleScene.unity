@@ -42,7 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -770,14 +771,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3983196525725510903, guid: 4f32d409e8e5f644d93de10e38841baa, type: 3}
-      propertyPath: Text
-      value: Test note
-      objectReference: {fileID: 0}
-    - target: {fileID: 3983196525725510903, guid: 4f32d409e8e5f644d93de10e38841baa, type: 3}
-      propertyPath: text
-      value: Test Note
-      objectReference: {fileID: 0}
     - target: {fileID: 5063435017739458573, guid: 4f32d409e8e5f644d93de10e38841baa, type: 3}
       propertyPath: m_Name
       value: StoryNote
@@ -792,7 +785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6111939590528463820, guid: 4f32d409e8e5f644d93de10e38841baa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.5
+      value: 9.481
       objectReference: {fileID: 0}
     - target: {fileID: 6111939590528463820, guid: 4f32d409e8e5f644d93de10e38841baa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -822,6 +815,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7109279888283177770, guid: 4f32d409e8e5f644d93de10e38841baa, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7109279888283177770, guid: 4f32d409e8e5f644d93de10e38841baa, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ab86911670b3345469f59ca3aa21433b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

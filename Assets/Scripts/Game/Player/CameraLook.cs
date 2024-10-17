@@ -22,15 +22,24 @@ public class CameraLook : MonoBehaviour
     {
         if (!Equals(CurrentObservedObject, observedObject))
         {
+            OnObjectLost();
             CurrentObservedObject = observedObject;
-            Debug.Log(CurrentObservedObject.name);
+            if (CurrentObservedObject != null && CurrentObservedObject.TryGetComponent(out IObservable observable))
+            {
+                observable.OnLookReceived();
+            }
         }
     }
 
     private void OnObjectLost()
     {
-        if (CurrentObservedObject)
+        if (CurrentObservedObject != null)
         {
+            if (CurrentObservedObject.TryGetComponent(out IObservable observable))
+            {
+                observable.OnLookLost();
+            }
+
             CurrentObservedObject = null;
         }
     }
